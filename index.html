@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Effortlessly split bills and calculate 
+  tips with precision using our intuitive tip calculator app. Perfect for dining out, 
+  gatherings, and more.">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="logo" class="logo">
+  </header>
+  <main class="main">
+    <div class="calculator_container">
+      <div class="input_container">
+        <label for="bill">Bill</label>
+        <p class="error_msg hidden">Enter a valid value!</p>
+        <input type="number" name="bill" id="bill">
+        <img src="./images/icon-dollar.svg" alt="" class="icon">
+      </div>
+      <h1>Select Tip %</h1>
+      <div class="tips_container">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <div>
+          <input type="text" aria-label="custom tip" placeholder="Custom"
+          class="custom_input">
+          <p class="custom error_msg hidden">Enter a valid value!</p>
+        </div>
+      </div>
+      <div class="input_container">
+        <label for="ppl_number">Number of People</label>
+        
+        <input type="number" name="ppl_number" id="ppl_number">
+        <img src="./images/icon-person.svg" alt="" class="icon">
+      </div>
+    </div>
+    <div class="result_container">
+      <div class="amount">
+        <div>
+          <p>Tip Amount</p>
+          <p class="person">/ person</p>
+        </div>
+        <p class="tip_amount">$0</p>
+      </div>
+      <div class="total">
+        <div>
+          <p>Total</p>
+          <p class="person">/ person</p>
+        </div>
+        <p class="total_bill">$0</p>
+      </div>
+      <button class="btn reset">Reset</button>
+    </div>
+  </main>
+</body>
+</html>
